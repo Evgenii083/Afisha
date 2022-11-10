@@ -1,12 +1,17 @@
 package ru.netology.poster;
 
-public class Poster {
+public class Films {
 
-    private String name;
+    private String filmPoster;
+        private int limitSize = 10;
 
-    public Poster(String name) {
-        this.name = "Один Дома";
+
+
+    public Films(int limitSize) {
+        this.limitSize = 4;
     }
 
+    public Films(String name) {
 
+    }
 }
