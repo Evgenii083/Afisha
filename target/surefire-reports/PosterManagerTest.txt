@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: PosterManagerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.069 s <<< FAILURE! - in PosterManagerTest
-shouldGetLimitPostersIfSizeOfArrIsTooMach  Time elapsed: 0.02 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: array lengths differ, expected: <7> but was: <14>
-	at PosterManagerTest.shouldGetLimitPostersIfSizeOfArrIsTooMach(PosterManagerTest.java:91)
-
-shouldGetAllPosters  Time elapsed: 0.001 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: array lengths differ, expected: <7> but was: <21>
-	at PosterManagerTest.shouldGetAllPosters(PosterManagerTest.java:55)
-
-shouldSaveNewPosters  Time elapsed: 0.002 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: array lengths differ, expected: <7> but was: <35>
-	at PosterManagerTest.shouldSaveNewPosters(PosterManagerTest.java:36)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s - in PosterManagerTest

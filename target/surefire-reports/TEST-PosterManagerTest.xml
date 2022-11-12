@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PosterManagerTest" time="0.069" tests="5" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PosterManagerTest" time="0.055" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="/Users/evgeniirybalkin/Library/Java/JavaVirtualMachines/corretto-11.0.16.1/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/evgeniirybalkin/Downloads/Afisha/target/surefire/surefirebooter128689387753745392.jar /Users/evgeniirybalkin/Downloads/Afisha/target/surefire 2022-11-06T19-10-20_660-jvmRun1 surefire12641023356616119879tmp surefire_02228780693726727529tmp"/>
+    <property name="sun.java.command" value="/Users/evgeniirybalkin/Downloads/Afisha/target/surefire/surefirebooter3582445090902601640.jar /Users/evgeniirybalkin/Downloads/Afisha/target/surefire 2022-11-12T18-37-11_307-jvmRun1 surefire3366085080817404504tmp surefire_09976898967629127148tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/evgeniirybalkin/Downloads/Afisha/target/test-classes:/Users/evgeniirybalkin/Downloads/Afisha/target/classes:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/evgeniirybalkin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
@@ -33,13 +33,13 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/evgeniirybalkin/Downloads/Afisha/target/surefire/surefirebooter128689387753745392.jar"/>
+    <property name="surefire.real.class.path" value="/Users/evgeniirybalkin/Downloads/Afisha/target/surefire/surefirebooter3582445090902601640.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.16.1+9-LTS"/>
     <property name="user.name" value="evgeniirybalkin"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="12.5.1"/>
+    <property name="os.version" value="13.0"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -62,36 +62,9 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="shouldGetLimitPosters" classname="PosterManagerTest" time="0.032"/>
-  <testcase name="shouldGetLimitPostersIfSizeOfArrIsTooMach" classname="PosterManagerTest" time="0.02">
-    <failure message="array lengths differ, expected: &lt;7&gt; but was: &lt;14&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: array lengths differ, expected: <7> but was: <14>
-	at PosterManagerTest.shouldGetLimitPostersIfSizeOfArrIsTooMach(PosterManagerTest.java:91)
-]]></failure>
-    <system-out><![CDATA[ru.netology.poster.Films@3adbe50f
-ru.netology.poster.Films@3a627c80
-ru.netology.poster.Films@49aa766b
-ru.netology.poster.Films@963176
-ru.netology.poster.Films@65004ff6
-ru.netology.poster.Films@4cafa9aa
-ru.netology.poster.Films@562c877a
-ru.netology.poster.Films@4c0884e8
-ru.netology.poster.Films@5bfc257
-ru.netology.poster.Films@34523d46
-ru.netology.poster.Films@7cedfa63
-ru.netology.poster.Films@67001148
-ru.netology.poster.Films@989da1
-ru.netology.poster.Films@31cb96e1
-]]></system-out>
-  </testcase>
-  <testcase name="shouldGetAllPosters" classname="PosterManagerTest" time="0.001">
-    <failure message="array lengths differ, expected: &lt;7&gt; but was: &lt;21&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: array lengths differ, expected: <7> but was: <21>
-	at PosterManagerTest.shouldGetAllPosters(PosterManagerTest.java:55)
-]]></failure>
-  </testcase>
-  <testcase name="shouldGetLimitPostersIfSizeOfArrayIsNegative" classname="PosterManagerTest" time="0"/>
-  <testcase name="shouldSaveNewPosters" classname="PosterManagerTest" time="0.002">
-    <failure message="array lengths differ, expected: &lt;7&gt; but was: &lt;35&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: array lengths differ, expected: <7> but was: <35>
-	at PosterManagerTest.shouldSaveNewPosters(PosterManagerTest.java:36)
-]]></failure>
-  </testcase>
+  <testcase name="shouldGetLimitPosters" classname="PosterManagerTest" time="0.029"/>
+  <testcase name="shouldGetLimitPostersIfSizeOfArrIsTooMach" classname="PosterManagerTest" time="0.001"/>
+  <testcase name="shouldGetAllPosters" classname="PosterManagerTest" time="0.001"/>
+  <testcase name="shouldGetLimitPostersIfSizeOfArrayIsNegative" classname="PosterManagerTest" time="0.001"/>
+  <testcase name="shouldSaveNewPosters" classname="PosterManagerTest" time="0.002"/>
 </testsuite>

@@ -20,15 +20,16 @@ public class PosterManagerTest {
 
     @Test
     public void shouldSaveNewPosters() {
-
         PosterManager Posters = new PosterManager();
-        PosterManager.save(poster0);
-        PosterManager.save(poster1);
-        PosterManager.save(poster2);
-        PosterManager.save(poster3);
-        PosterManager.save(poster4);
-        PosterManager.save(poster5);
-        PosterManager.save(poster6);
+
+
+        Posters.save(poster0);
+        Posters.save(poster1);
+        Posters.save(poster2);
+        Posters.save(poster3);
+        Posters.save(poster4);
+        Posters.save(poster5);
+        Posters.save(poster6);
 
         Films[] expected = {poster0, poster1, poster2, poster3, poster4, poster5, poster6};
         Films[] actual = Posters.getPosters();
@@ -40,13 +41,13 @@ public class PosterManagerTest {
     @Test
     public void shouldGetAllPosters() {
         PosterManager Posters = new PosterManager();
-        PosterManager.save(poster0);
-        PosterManager.save(poster1);
-        PosterManager.save(poster2);
-        PosterManager.save(poster3);
-        PosterManager.save(poster4);
-        PosterManager.save(poster5);
-        PosterManager.save(poster6);
+        Posters.save(poster0);
+        Posters.save(poster1);
+        Posters.save(poster2);
+        Posters.save(poster3);
+        Posters.save(poster4);
+        Posters.save(poster5);
+        Posters.save(poster6);
         Posters.getAllPosters();
 
         Films[] expected = {poster0, poster1, poster2, poster3, poster4, poster5, poster6};
@@ -58,13 +59,13 @@ public class PosterManagerTest {
     @Test
     public void shouldGetLimitPosters() {
         PosterManager Posters = new PosterManager();
-        PosterManager.save(poster0);
-        PosterManager.save(poster1);
-        PosterManager.save(poster2);
-        PosterManager.save(poster3);
-        PosterManager.save(poster4);
-        PosterManager.save(poster5);
-        PosterManager.save(poster6);
+        Posters.save(poster0);
+        Posters.save(poster1);
+        Posters.save(poster2);
+        Posters.save(poster3);
+        Posters.save(poster4);
+        Posters.save(poster5);
+        Posters.save(poster6);
         Posters.getLimitPosters(2);
 
         Films[] expected = {poster6, poster5, poster4, poster3};
@@ -77,13 +78,13 @@ public class PosterManagerTest {
     @Test
     public void shouldGetLimitPostersIfSizeOfArrIsTooMach() {
         PosterManager Posters = new PosterManager();
-        PosterManager.save(poster0);
-        PosterManager.save(poster1);
-        PosterManager.save(poster2);
-        PosterManager.save(poster3);
-        PosterManager.save(poster4);
-        PosterManager.save(poster5);
-        PosterManager.save(poster6);
+        Posters.save(poster0);
+        Posters.save(poster1);
+        Posters.save(poster2);
+        Posters.save(poster3);
+        Posters.save(poster4);
+        Posters.save(poster5);
+        Posters.save(poster6);
 
         Films[] expected = {poster6, poster5, poster4, poster3, poster2, poster1, poster0};
         Films[] actual = Posters.getLimitPosters(8);
@@ -94,13 +95,13 @@ public class PosterManagerTest {
     @Test
     public void shouldGetLimitPostersIfSizeOfArrayIsNegative() {
         PosterManager Posters = new PosterManager();
-        PosterManager.save(poster0);
-        PosterManager.save(poster1);
-        PosterManager.save(poster2);
-        PosterManager.save(poster3);
-        PosterManager.save(poster4);
-        PosterManager.save(poster5);
-        PosterManager.save(poster6);
+        Posters.save(poster0);
+        Posters.save(poster1);
+        Posters.save(poster2);
+        Posters.save(poster3);
+        Posters.save(poster4);
+        Posters.save(poster5);
+        Posters.save(poster6);
 
         Films[] expected = {poster6};
         Films[] actual = Posters.getLimitPosters(-4);

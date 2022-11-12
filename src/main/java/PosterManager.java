@@ -1,11 +1,11 @@
 import ru.netology.poster.Films;
-import ru.netology.poster.Films;
+
 
 public class PosterManager {
-    private static Films[] posters = new Films[0];
+    private Films[] posters = new Films[0];
 
 
-    public static void save(Films poster) {
+    public  void save(Films poster) {
         Films[] tmp = new Films[posters.length + 1];
         for (int i = 0; i < posters.length; i++) {
             tmp[i] = posters[i];
