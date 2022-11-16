@@ -1,2 +1,3 @@
-PosterManager.class
-ru/netology/poster/Films.class
+Manager.class
+Repository.class
+ru/netology/project/Product.class
