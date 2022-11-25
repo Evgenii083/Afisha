@@ -3,12 +3,12 @@ package ru.netology.poster;
 public class Films {
 
     private String filmPoster;
-        private int limitSize = 10;
+        private int limit = 10;
 
 
 
     public Films(int limitSize) {
-        this.limitSize = 4;
+        this.limit = 4;
     }
 
     public Films(String name) {

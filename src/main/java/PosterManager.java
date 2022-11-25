@@ -1,11 +1,16 @@
 import ru.netology.poster.Films;
-
-
 public class PosterManager {
+    int limit = 10;
     private Films[] posters = new Films[0];
 
+    public PosterManager(int limit) {
+        this.limit = limit;
+    }
 
-    public  void save(Films poster) {
+    public PosterManager() {
+    }
+
+    public void save(Films poster) {
         Films[] tmp = new Films[posters.length + 1];
         for (int i = 0; i < posters.length; i++) {
             tmp[i] = posters[i];
@@ -13,8 +18,6 @@ public class PosterManager {
         tmp[tmp.length - 1] = poster;
         posters = tmp;
     }
-
-
     public Films[] getPosters() {
         return posters;
     }
@@ -24,34 +27,27 @@ public class PosterManager {
         return all;
     }
 
-    public Films[] getLimitPosters(int lmt) {
-//        for (int i = 0; i < posters.length; i++) {
-//
-//            System.out.println(posters[posters.length - 1 - i]);
-//        }
-        int limitSize = 0;
-
-//        int real_size = Math.max(1, Math.min(lmt, posters.length));
-        int real_size = lmt;
-        if (1 > lmt) {
-            real_size = 1;
+    public Films[] getLimitPosters() {
+        int copyToIndex = 0;
+        int realSize = limit;
+        if (1 > limit) {
+            realSize = 1;
         } else {
-            if (lmt > posters.length) {
-                real_size = posters.length;
+            if (limit > posters.length) {
+                realSize = posters.length;
+            }else {
+                if(limit < 0){
+                    realSize = 1;
+                }
             }
         }
-
-        Films[] tmp1 = new Films[real_size];
+        Films[] tmp1 = new Films[realSize];
         for (int i = posters.length - 1; i >= 0; i--) {
-            if (limitSize < real_size) {
-                tmp1[limitSize] = posters[i];
-                System.out.println(tmp1[limitSize]);
-                limitSize++;
+            if (copyToIndex < realSize) {
+                tmp1[copyToIndex] = posters[i];
+                copyToIndex++;
             }
         }
         return tmp1;
-
     }
-
-
 }

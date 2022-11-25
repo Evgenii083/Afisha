@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PosterManagerTest" time="0.055" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PosterManagerTest" time="0.061" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/evgeniirybalkin/Downloads/Afisha/target/test-classes:/Users/evgeniirybalkin/Downloads/Afisha/target/classes:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/evgeniirybalkin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
+    <property name="java.class.path" value="/Users/evgeniirybalkin/Afisha/target/test-classes:/Users/evgeniirybalkin/Afisha/target/classes:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/evgeniirybalkin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
     <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
@@ -16,10 +16,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="/Users/evgeniirybalkin/Library/Java/JavaVirtualMachines/corretto-11.0.16.1/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/evgeniirybalkin/Downloads/Afisha/target/surefire/surefirebooter3582445090902601640.jar /Users/evgeniirybalkin/Downloads/Afisha/target/surefire 2022-11-12T18-37-11_307-jvmRun1 surefire3366085080817404504tmp surefire_09976898967629127148tmp"/>
+    <property name="sun.java.command" value="/Users/evgeniirybalkin/Afisha/target/surefire/surefirebooter1810242937277707021.jar /Users/evgeniirybalkin/Afisha/target/surefire 2022-11-25T19-40-17_943-jvmRun1 surefire16919280875371508171tmp surefire_013866139085711809204tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/evgeniirybalkin/Downloads/Afisha/target/test-classes:/Users/evgeniirybalkin/Downloads/Afisha/target/classes:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/evgeniirybalkin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/evgeniirybalkin/Afisha/target/test-classes:/Users/evgeniirybalkin/Afisha/target/classes:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/evgeniirybalkin/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/evgeniirybalkin/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/evgeniirybalkin"/>
     <property name="user.language" value="ru"/>
@@ -27,13 +27,13 @@
     <property name="java.version.date" value="2022-08-12"/>
     <property name="java.home" value="/Users/evgeniirybalkin/Library/Java/JavaVirtualMachines/corretto-11.0.16.1/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/evgeniirybalkin/Downloads/Afisha"/>
+    <property name="basedir" value="/Users/evgeniirybalkin/Afisha"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/evgeniirybalkin/Downloads/Afisha/target/surefire/surefirebooter3582445090902601640.jar"/>
+    <property name="surefire.real.class.path" value="/Users/evgeniirybalkin/Afisha/target/surefire/surefirebooter1810242937277707021.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.16.1+9-LTS"/>
@@ -49,7 +49,7 @@
     <property name="java.io.tmpdir" value="/var/folders/89/75rwq4kj2cxfz7_kgqhzmysc0000gn/T/"/>
     <property name="idea.version" value="2022.2.1"/>
     <property name="java.version" value="11.0.16.1"/>
-    <property name="user.dir" value="/Users/evgeniirybalkin/Downloads/Afisha"/>
+    <property name="user.dir" value="/Users/evgeniirybalkin/Afisha"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
@@ -62,9 +62,10 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="shouldGetLimitPosters" classname="PosterManagerTest" time="0.029"/>
-  <testcase name="shouldGetLimitPostersIfSizeOfArrIsTooMach" classname="PosterManagerTest" time="0.001"/>
-  <testcase name="shouldGetAllPosters" classname="PosterManagerTest" time="0.001"/>
-  <testcase name="shouldGetLimitPostersIfSizeOfArrayIsNegative" classname="PosterManagerTest" time="0.001"/>
-  <testcase name="shouldSaveNewPosters" classname="PosterManagerTest" time="0.002"/>
+  <testcase name="shouldGetLimitPosters" classname="PosterManagerTest" time="0.035"/>
+  <testcase name="shouldGetLimitPostersIfSizeOfArrIsTooMach" classname="PosterManagerTest" time="0"/>
+  <testcase name="shouldGetAllPosters" classname="PosterManagerTest" time="0"/>
+  <testcase name="shouldGetLimitPostersWithNullConstructor" classname="PosterManagerTest" time="0"/>
+  <testcase name="shouldGetLimitPostersIfSizeOfArrayIsNegative" classname="PosterManagerTest" time="0.002"/>
+  <testcase name="shouldSaveNewPosters" classname="PosterManagerTest" time="0.001"/>
 </testsuite>
