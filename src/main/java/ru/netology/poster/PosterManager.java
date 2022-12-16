@@ -1,11 +1,21 @@
-import ru.netology.poster.Films;
-
+package ru.netology.poster;
 
 public class PosterManager {
+
+    public PosterManager(int posterLimit) {
+        this.posterLimit = posterLimit;
+    }
+
+    public PosterManager() {
+    }
+
+    int posterLimit = 10;
+
+
     private Films[] posters = new Films[0];
 
 
-    public  void save(Films poster) {
+    public void save(Films poster) {
         Films[] tmp = new Films[posters.length + 1];
         for (int i = 0; i < posters.length; i++) {
             tmp[i] = posters[i];
@@ -20,38 +30,30 @@ public class PosterManager {
     }
 
     public Films[] getAllPosters() {
-        Films[] all = getPosters();
-        return all;
+        return getPosters();
     }
 
-    public Films[] getLimitPosters(int lmt) {
-//        for (int i = 0; i < posters.length; i++) {
-//
-//            System.out.println(posters[posters.length - 1 - i]);
-//        }
-        int limitSize = 0;
 
-//        int real_size = Math.max(1, Math.min(lmt, posters.length));
-        int real_size = lmt;
-        if (1 > lmt) {
-            real_size = 1;
+    public Films[] getLimitPosters() {
+        int lmt = posterLimit;
+        int limitSize = 0;
+        int realSize = lmt;
+
+        if (lmt <= 0) {
+            realSize = 1;
         } else {
             if (lmt > posters.length) {
-                real_size = posters.length;
+                realSize = posters.length;
             }
         }
 
-        Films[] tmp1 = new Films[real_size];
+        Films[] tmp1 = new Films[realSize];
         for (int i = posters.length - 1; i >= 0; i--) {
-            if (limitSize < real_size) {
+            if (limitSize < realSize) {
                 tmp1[limitSize] = posters[i];
-                System.out.println(tmp1[limitSize]);
                 limitSize++;
             }
         }
         return tmp1;
-
     }
-
-
 }
